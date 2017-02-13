@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_6a010867dc8e767d0b5c361354471dd8e15e9956.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_4b1710d963a99b39a25b0c4ef9492f199db69727.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_6594b75ee60c2be909c21996237dedba5c311276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.getkeepsafe.relinker\relinker\1.2.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b64dd5f01bc37de289f90fd59299b0c76d119611">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.getkeepsafe.relinker-relinker-1.2.2_1cd8338678a09e46e47de952ac9b839bf6d1e7f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta5_1a79fd7fdbe50df1b61f2351e501306f5aa37e4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_37d0616cb738f48854d93d0f6b71f67d36d7afc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_b36fffce834946be790379827072fd22b3842974.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\io.realm\realm-android-library\2.2.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a4b88325124c4bd658ae2717977668646ba9b37a">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-2.2.2_b3fec082d16a81d2ad39c57309bcff3bf5c52de6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9015c8402091f3ee93ddc58ab46eef2da39f65d4">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_955c6fbb287ec26f3c03bb240fe72c39de5fa6fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-beta5_328edf9e5b0e79ebef003ef1b55099cc29898ded.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_59d76e4e3db3a4ac63829acd822be9842ad9324c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\2.2.2\12c92a768592dd916407f3c45644a83a7ad2b103\realm-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="12c92a768592dd916407f3c45644a83a7ad2b103">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\realm-annotations-2.2.2_f750081fb7e92b417e903a56b5a6b8034ad4e6dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.4.0_6781bb4e532aff595b1f4114d8ff9229233051d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\io.realm\android-adapters\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ae57cc4afcb7ed42ee18f3c0a0a87f4ec3e783f">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\io.realm-android-adapters-1.4.0_bf5aa49bb963b644d73f435010cae59bc2b9cf36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c28d6df565eccb1dc963431b12a6f29a549da19e">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\instant-run_d1148e1ec943427a9e708758eaa790f2861f64d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_524831c7746404bbc99cb5adba338862893e02de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_5241464bfbcfe8b7b5e08333ea0486563518c5fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.0\support-annotations-24.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a23146e1a8c7cb4758e3d3f62449213f1e51f67">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\pre-dexed\debug\support-annotations-24.1.0_755ea9b08387c02d68b0344ec860577bdd39b0bb.jar" />
+    </item>
+
+</items>
