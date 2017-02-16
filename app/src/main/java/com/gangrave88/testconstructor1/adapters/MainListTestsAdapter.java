@@ -10,12 +10,15 @@ import io.realm.OrderedRealmCollection;
 import io.realm.RealmBaseAdapter;
 
 public class MainListTestsAdapter extends RealmBaseAdapter{
+
     public MainListTestsAdapter(@NonNull Context context, @Nullable OrderedRealmCollection data) {
         super(context, data);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+
         return null;
     }
 }

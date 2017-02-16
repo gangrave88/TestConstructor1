@@ -34,6 +34,7 @@ public class ListQuestions extends Fragment {
 
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.frag,frag);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
 }

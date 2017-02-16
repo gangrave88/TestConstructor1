@@ -49,4 +49,8 @@ public class Question extends RealmObject{
     public boolean isAnswerCorrect(Answer userAnswer){
         return correctAnswer.equals(userAnswer);
     }
+
+    public void setOneAnswer(Answer answer){
+        answers.add(answer);
+    }
 }
