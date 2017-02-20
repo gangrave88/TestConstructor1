@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta5_328edf9e5b0e79ebef003ef1b55099cc29898ded\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
         <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_4b1710d963a99b39a25b0c4ef9492f199db69727\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android app\TestConstructor1\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
-        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_273e1b629fb531ceb4bfae7adf146277369c856d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -54,6 +54,15 @@
         revision="23.0.3"
         sha1="b64dd5f01bc37de289f90fd59299b0c76d119611">
         <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getkeepsafe.relinker-relinker-1.2.2_1cd8338678a09e46e47de952ac9b839bf6d1e7f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruslan\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
+        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta5_1a79fd7fdbe50df1b61f2351e501306f5aa37e4c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -135,15 +144,6 @@
         revision="23.0.3"
         sha1="12c92a768592dd916407f3c45644a83a7ad2b103">
         <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\realm-annotations-2.2.2_f750081fb7e92b417e903a56b5a6b8034ad4e6dc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Ruslan\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="0a9cb567dc008f570c28531720168f19148da965">
-        <dex dex="D:\Android app\TestConstructor1\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_36a466f6a2e239650b6996a7d3bb01e563a43c66\classes.dex" />
     </item>
     <item
         is-multidex="true"

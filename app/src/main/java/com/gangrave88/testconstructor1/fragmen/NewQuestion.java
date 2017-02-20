@@ -1,8 +1,9 @@
 package com.gangrave88.testconstructor1.fragmen;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,10 +18,11 @@ import com.gangrave88.testconstructor1.realmModel.Question;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.realm.RealmList;
 
-public class NewQuestion extends Fragment {
+public class NewQuestion extends DialogFragment {
 
-    private newQuestionInterface listener;
+    private OnFragmentInteractionListener mListener;
 
     @BindView(R.id.question_name)TextView questionName;
     @BindView(R.id.answer_1)TextView answer_1;
@@ -33,63 +35,63 @@ public class NewQuestion extends Fragment {
     @BindView(R.id.radio_answer_3)RadioButton rAnswer3;
     @BindView(R.id.radio_answer_4)RadioButton rAnswer4;
 
+    public interface OnFragmentInteractionListener {
+        public void saveQuestion(Question question);
+    }
+
+    public static NewQuestion getInstance(){
+        NewQuestion newQuestion = new NewQuestion();
+        return newQuestion;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_new_question, container, false);
         ButterKnife.bind(this,view);
         return view;
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        Bundle bundle = getArguments();
-        if (bundle!=null){
-            //not new Question
-        }
-    }
-
-    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof newQuestionInterface){
-            listener = (newQuestionInterface) context;
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnFragmentInteractionListener");
         }
-        else {
-            throw new ClassCastException(context.toString());
-        }
-    }
-
-    public interface newQuestionInterface{
-        void addQuestion(Question question);
-    }
-
-    @OnClick(R.id.save_question)
-    public void saveQuestion(){
-        Question question = new Question();
-        question.setName(questionName.toString());
-        question.setOneAnswer(new Answer(answer_1.toString()));
-        question.setOneAnswer(new Answer(answer_2.toString()));
-        question.setOneAnswer(new Answer(answer_3.toString()));
-        question.setOneAnswer(new Answer(answer_4.toString()));
-
-        Answer correctAnswer = new Answer();
-        if (rAnswer1.isChecked()) correctAnswer.setAnswer(answer_1.toString());
-        if (rAnswer2.isChecked()) correctAnswer.setAnswer(answer_2.toString());
-        if (rAnswer3.isChecked()) correctAnswer.setAnswer(answer_3.toString());
-        if (rAnswer4.isChecked()) correctAnswer.setAnswer(answer_4.toString());
-
-        question.setCorrectAnswer(correctAnswer);
-
-        listener.addQuestion(question);
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        listener = null;
+        mListener = null;
+    }
+
+    @OnClick(R.id.save_question)
+    public void saveQuestion(){
+        Question question = new Question();
+        question.setName(questionName.getText().toString());
+
+        RealmList<Answer> answers = new RealmList<>();
+        answers.add(new Answer(answer_1.getText().toString()));
+        answers.add(new Answer(answer_2.getText().toString()));
+        answers.add(new Answer(answer_3.getText().toString()));
+        answers.add(new Answer(answer_4.getText().toString()));
+
+        question.setAnswers(answers);
+
+        Answer correctAnswer = new Answer();
+        if (rAnswer1.isChecked()) correctAnswer.setAnswer(answer_1.getText().toString());
+        if (rAnswer2.isChecked()) correctAnswer.setAnswer(answer_2.getText().toString());
+        if (rAnswer3.isChecked()) correctAnswer.setAnswer(answer_3.getText().toString());
+        if (rAnswer4.isChecked()) correctAnswer.setAnswer(answer_4.getText().toString());
+
+        question.setCorrectAnswer(correctAnswer);
+
+        mListener.saveQuestion(question);
+
+        dismiss();
     }
 }
