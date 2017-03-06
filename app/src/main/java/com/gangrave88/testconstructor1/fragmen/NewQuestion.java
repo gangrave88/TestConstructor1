@@ -3,6 +3,7 @@ package com.gangrave88.testconstructor1.fragmen;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -24,6 +25,9 @@ public class NewQuestion extends DialogFragment {
 
     private OnFragmentInteractionListener mListener;
 
+    private Question cQuestion;
+    private int location;
+
     @BindView(R.id.question_name)TextView questionName;
     @BindView(R.id.answer_1)TextView answer_1;
     @BindView(R.id.answer_2)TextView answer_2;
@@ -37,11 +41,32 @@ public class NewQuestion extends DialogFragment {
 
     public interface OnFragmentInteractionListener {
         public void saveQuestion(Question question);
+        public void updateQuestion(Question question, int location);
     }
 
-    public static NewQuestion getInstance(){
-        NewQuestion newQuestion = new NewQuestion();
-        return newQuestion;
+    public NewQuestion() {
+
+    }
+
+    public NewQuestion(Question q, int l) {
+        location = l;
+        cQuestion = q;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.Theme_AppCompat_Dialog);
+    }
+
+    public static NewQuestion getInstance(Question q,int l){
+        if (q!=null){
+            return new NewQuestion(q,l);
+        }
+        else{
+            return new NewQuestion();
+        }
     }
 
     @Override
@@ -49,6 +74,21 @@ public class NewQuestion extends DialogFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new_question, container, false);
         ButterKnife.bind(this,view);
+        if (cQuestion!=null) {
+            questionName.setText(cQuestion.getName());
+            RealmList<Answer> answers = cQuestion.getAnswers();
+            answer_1.setText(answers.get(0).getAnswer());
+            answer_2.setText(answers.get(1).getAnswer());
+            answer_3.setText(answers.get(2).getAnswer());
+            answer_4.setText(answers.get(3).getAnswer());
+
+            Answer cAnswer = cQuestion.getCorrectAnswer();
+
+            if (cAnswer.equals(answers.get(0))) rAnswer1.setChecked(true);
+            if (cAnswer.equals(answers.get(1))) rAnswer2.setChecked(true);
+            if (cAnswer.equals(answers.get(2))) rAnswer3.setChecked(true);
+            if (cAnswer.equals(answers.get(3))) rAnswer4.setChecked(true);
+        }
         return view;
     }
 
@@ -90,7 +130,12 @@ public class NewQuestion extends DialogFragment {
 
         question.setCorrectAnswer(correctAnswer);
 
-        mListener.saveQuestion(question);
+        if (cQuestion!=null){
+            mListener.updateQuestion(question,location);
+        }
+        else {
+            mListener.saveQuestion(question);
+        }
 
         dismiss();
     }
