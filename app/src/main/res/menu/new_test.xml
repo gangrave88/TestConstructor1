@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/apply"
         android:icon="@android:drawable/ic_menu_save"
-        android:title="save"
-        android:showAsAction="always"/>
+        android:title="@string/save"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"/>
 </menu>

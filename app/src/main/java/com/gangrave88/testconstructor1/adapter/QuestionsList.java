@@ -14,9 +14,11 @@ import io.realm.RealmList;
 public class QuestionsList extends RecyclerView.Adapter<QuestionsList.ViewHolder>{
 
     private RealmList<Question> questions;
+    private QuestionListOnClickListener context;
 
-    public QuestionsList(RealmList<Question> q) {
+    public QuestionsList(RealmList<Question> q, QuestionListOnClickListener con) {
         questions = q;
+        context = con;
     }
 
     @Override
@@ -28,7 +30,7 @@ public class QuestionsList extends RecyclerView.Adapter<QuestionsList.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.questionName.setText(questions.get(position).getName());
+        holder.bind(questions.get(position),context);
     }
 
     @Override
@@ -36,7 +38,7 @@ public class QuestionsList extends RecyclerView.Adapter<QuestionsList.ViewHolder
         return questions.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView questionName;
 
@@ -44,5 +46,19 @@ public class QuestionsList extends RecyclerView.Adapter<QuestionsList.ViewHolder
             super(itemView);
             questionName = (TextView) itemView.findViewById(R.id.question_name);
         }
+
+        public void bind(final Question question, final QuestionListOnClickListener listener){
+            questionName.setText(question.getName());
+            questionName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onClickQuestionClick(question);
+                }
+            });
+        }
+    }
+
+    public interface QuestionListOnClickListener{
+        public void onClickQuestionClick(Question q);
     }
 }
